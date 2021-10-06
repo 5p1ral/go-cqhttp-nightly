@@ -30,6 +30,7 @@ jobs:
         git config --global user.name "action"
         git config --global user.email "action@github.com"
         git commit -a -m "tmp"
+        git tag $(date +"%y.%m.%d")
     - name: Run GoReleaser
       uses: goreleaser/goreleaser-action@v2
       with:
