@@ -14,7 +14,7 @@ jobs:
     - name: Generate release tag
       run: |
         git tag $(date +"%y.%m.%d")
-        git push origin --tag
+        git push origin --tag -f
     - name: Clone source code
       uses: actions/checkout@v2
       with:
