@@ -79,7 +79,7 @@ nfpms:
 
 release:
   github:
-    owner: j1g5awi
+    owner: 5p1ral
     name: go-cqhttp-nightly
 changelog:
   skip: true
