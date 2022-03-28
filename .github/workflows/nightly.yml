@@ -22,8 +22,6 @@ jobs:
         ref: dev
     - name: Setup Go environment
       uses: actions/setup-go@v2
-      with:
-        go-version: 1.17
     - name: Setup GoReleaser
       run: |
         curl -o .goreleaser.yml https://raw.githubusercontent.com/j1g5awi/go-cqhttp-nightly/master/.goreleaser.yml
